@@ -1,0 +1,21 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: week03
+
+app:
+  name: 企业后台管理系统
+  version: 2.0.0
+  description: Spring Boot 配置示例
+  env: [" dev", "test", "prod"]
+  author:
+    name: jlu
+    website: https://www.jlu.top
+    email: 3370921550@qq.com
+  token: 2000
+  enabled:
+
