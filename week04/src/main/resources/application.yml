@@ -1,0 +1,16 @@
+team:
+  leader: aaa
+  age: 32
+  email: zhangsan@example.com
+  phone: 13800000000
+  createTime: 2026-03-26
+
+
+spring:
+  application:
+    name: week04  # 应用名称
+  # 文件上传配置
+  servlet:
+    multipart:
+      max-file-size: 10MB  # 单个文件最大大小，默认1MB
+      max-request-size: 100MB # 总请求大小，默认10MB
