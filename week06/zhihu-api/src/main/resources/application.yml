@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: week06-special-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot3_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: lujun7850
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  global-config:
+    db-config:
+      # 配置表名前缀
+      table-prefix: t_
+      # 配置ID生成策略为自增
+      id-type: auto
+  configuration:
+    # 开启驼峰命名自动转换
+    map-underscore-to-camel-case: true
+    # 开启日志输出
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+  port: 8080
